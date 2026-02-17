@@ -77,11 +77,16 @@ body{
     color: white;
     padding: 10px;
     border-radius: 20px;
+    border: solid #A435F0 1px;
 }
 .categories p:hover{
-    background-color: #7127a3;
-
+    background-color: transparent;
+    border: solid #A435F0 1px;
+    color: black;
+    transition: 300ms;
+    cursor: pointer;
 }
+
 
 .sale-image{
    position: relative;
@@ -92,18 +97,34 @@ body{
 .sale-image__offer{
     position: absolute;
     width: 25%;
-    height: 150px;
+    /* height: 150px; */
     background-color: white;
-    /* border: solid black 1px; */
+    border: solid #72D8BA 1px;
     left: 100px;
     top: 100px;
     border-radius: 30px;
     font-size: larger;
     text-align: center;
-   
-    padding: 20px;
-    padding-top: 30px;
+    padding: 35px 30px;
+    animation-name: pop;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
+
+@keyframes pop {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
 
 
 
