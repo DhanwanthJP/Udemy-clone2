@@ -115,7 +115,7 @@ body{
     text-align: center;
     padding: 35px 30px;
     animation-name: pop;
-    animation-duration: 1s;
+    animation-duration: 2s;
     opacity: 0;
     animation-fill-mode: forwards;
 }
@@ -229,12 +229,15 @@ body{
 .footer__one p{
     margin: 10px;
 }
+
 @media screen and (max-width: 1000px) {
     .sale-image__offer{
         font-size: 12px;
         padding: 25px 20px;
     }
 }
+
+
 @media screen and (max-width: 800px) {
     body{
         font-size: 10px;
